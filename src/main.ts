@@ -35,7 +35,7 @@ if (flags.input.length === 0 || flags.input === "") {
 	printHelp("Invalid input file specified");
 }
 
-let input :string = null;
+let input :string = "";
 try {
 	input = await Deno.readTextFile(flags.input);
 } catch (error) {
